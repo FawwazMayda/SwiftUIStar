@@ -1,3 +1,3 @@
 # SwiftUIStar
 
-A description of this package.
+Star rating view for SwiftUI
