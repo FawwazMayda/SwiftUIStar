@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct StarView: View {
+    var starCount = 5
     var body: some View {
-        VStack {
-            Text("Filled Star")
-            Image("filled",bundle: Bundle.module)
-            Text("Unfilled Star")
-            Image("unfilled", bundle: Bundle.module)
+        HStack {
+            ForEach(0..<starCount){i in
+                Image("unfilled", bundle: Bundle.module)
+            }
         }
     }
 }
