@@ -25,6 +25,6 @@ struct StarView: View {
 
 struct SwiftUIStar_Previews: PreviewProvider {
     static var previews: some View {
-        StarView(starCount: 8)
+        StarView(starCount: 10)
     }
 }
