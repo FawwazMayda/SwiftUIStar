@@ -3,6 +3,15 @@ import SwiftUI
 struct StarView: View {
     @State var selectedIndex = -1
     var starCount = 5
+    
+    init() {
+        
+    }
+    
+    init(starCount: Int) {
+        self.starCount = starCount
+    }
+    
     var body: some View {
         HStack {
             ForEach(0..<starCount){i in
@@ -16,6 +25,6 @@ struct StarView: View {
 
 struct SwiftUIStar_Previews: PreviewProvider {
     static var previews: some View {
-        StarView()
+        StarView(starCount: 7)
     }
 }
